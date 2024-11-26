@@ -130,9 +130,12 @@
                                     {% endif %}
                                 </ul>
                             </div>
-                            <a class="nav-link" href="{% url 'logout' %}">
-                                <i class="fas fa-sign-out-alt me-2"></i>Logout
-                            </a>
+                            <form method="post" action="{% url 'logout' %}" class="d-inline">
+                                {% csrf_token %}
+                                <button type="submit" class="btn nav-link">
+                                    <i class="fas fa-sign-out-alt me-2"></i>Logout
+                                </button>
+                            </form>
                         </div>
                     {% else %}
                         <div class="navbar-nav">

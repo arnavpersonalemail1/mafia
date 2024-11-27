@@ -1311,3 +1311,21 @@ Method Not Allowed (HEAD): /logout/
 Method Not Allowed: /logout/
 "HEAD /logout/ HTTP/1.1" 405 0
 "HEAD /logout/ HTTP/1.1" 405 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 7443
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 7443
+Not Found: /order
+Not Found: /pricing
+"GET /order HTTP/1.1" 404 7443
+"GET /pricing HTTP/1.1" 404 7443
+Not Found: /cart
+"GET /cart HTTP/1.1" 404 7443
+Not Found: /contact
+Not Found: /search
+"GET /contact HTTP/1.1" 404 7443
+"GET /search HTTP/1.1" 404 7443
+Not Found: /blog
+"GET /blog HTTP/1.1" 404 7443
+Not Found: /wp-admin
+"GET /wp-admin HTTP/1.1" 404 7443
